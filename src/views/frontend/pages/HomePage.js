@@ -1,11 +1,15 @@
 import React, { useEffect } from 'react'
  
 // Import Swiper React components
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 // Import Swiper styles
 import 'swiper/css';
-
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const HomePage = () => {
     return (
@@ -224,8 +228,14 @@ const HomePage = () => {
 
                        
                         <Swiper
+                              // install Swiper modules
+                            modules={[Navigation, Pagination, A11y]}
                             spaceBetween={50}
-                            slidesPerView={4}
+                            slidesPerView={5}
+                            navigation
+                            pagination={{ clickable: true }}
+                            // scrollbar={{ draggable: true }}
+                            onSwiper={(swiper) => console.log(swiper)}
                             onSlideChange={() => console.log('slide change')}
                         
                             >
@@ -238,6 +248,52 @@ const HomePage = () => {
                                     <h5>Alex John</h5>
                                 </div>
                             </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="testimonials__img">
+                                    <img src="" alt="image" />
+                                </div>
+                                <div className="testimonials__cont">
+                                    <div className="cont">Hello world</div>
+                                    <h5>Alex John</h5>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="testimonials__img">
+                                    <img src="" alt="image" />
+                                </div>
+                                <div className="testimonials__cont">
+                                    <div className="cont">Hello world</div>
+                                    <h5>Alex John</h5>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="testimonials__img">
+                                    <img src="" alt="image" />
+                                </div>
+                                <div className="testimonials__cont">
+                                    <div className="cont">Hello world</div>
+                                    <h5>Alex John</h5>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="testimonials__img">
+                                    <img src="" alt="image" />
+                                </div>
+                                <div className="testimonials__cont">
+                                    <div className="cont">Hello world</div>
+                                    <h5>Alex John</h5>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="testimonials__img">
+                                    <img src="" alt="image" />
+                                </div>
+                                <div className="testimonials__cont">
+                                    <div className="cont">Hello world</div>
+                                    <h5>Alex John</h5>
+                                </div>
+                            </SwiperSlide>
+
                         </Swiper>
 
 
@@ -275,7 +331,6 @@ const HomePage = () => {
                                     <span>Twitter Followers</span>
                                 </div>
                             </div>
-
 
                         </div>
                     </div>
