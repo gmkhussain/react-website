@@ -4,6 +4,7 @@ const HomePage = () => {
     return (
         <section>
             Home works
+            <button class="btn btn-primary">Click here</button>
         </section>
         )
 }

@@ -3,6 +3,9 @@ import React from 'react'
 // 3rd Party Lib
 import { BrowserRouter as Router, Routes , Route} from "react-router-dom"
 
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.bundle'
+
 // Layouts
 import DefaultLayout from './views/frontend/layouts/DefaultLayout'
 
