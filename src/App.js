@@ -6,6 +6,11 @@ import { BrowserRouter as Router, Routes , Route} from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 
+import "animate.css/animate.min.css";
+
+import "./App.css";
+
+
 // Layouts
 import DefaultLayout from './views/frontend/layouts/DefaultLayout'
 
